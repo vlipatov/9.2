@@ -1,6 +1,7 @@
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.file.*;
 import java.util.Scanner;
 
 public class Main {
@@ -10,12 +11,23 @@ public class Main {
         String path = scanner.nextLine();
         System.out.println("Введите путь назначения");
         String newPath = scanner.nextLine();
-        Files.copy(Paths.get(path), Paths.get(newPath));
-
+        folderCopy(path, newPath);
 
     }
 
     private static void folderCopy(String path, String newPath) throws IOException {
-        Files.copy(Paths.get(path), Paths.get(newPath));
+
+        Path source = Paths.get(path);
+        Path destination = Paths.get(newPath);
+//        Files.createDirectory(destination);
+        File folder = new File(path);
+        File[] files = folder.listFiles();
+
+        try {
+            Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("Папка скопирована!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
