@@ -18,11 +18,15 @@ public class Main {
         File sourceDir = new File(source);
         File[] listOfFiles = sourceDir.listFiles();
         Path destDir = Paths.get(destination);
-        if(!destDir.toFile().isDirectory()) { // если по пути назначения нет папки, то создаем новую
+        if (!destDir.toFile().isDirectory()) { // если по пути назначения нет папки, то создаем новую
             Files.createDirectory(destDir);
         }
         if (listOfFiles != null)
             for (File file : listOfFiles)
-                Files.copy(file.toPath(), destDir.resolve(file.getName()), StandardCopyOption.REPLACE_EXISTING);
+                if (file.isDirectory()) {
+                    System.out.println(file.getAbsolutePath());
+                    System.out.println(destDir+"\\"+file.getName());
+                    folderCopy(file.getAbsolutePath(), destDir+"\\"+file.getName());
+                } else Files.copy(file.toPath(), destDir.resolve(file.getName()), StandardCopyOption.REPLACE_EXISTING);
     }
 }
