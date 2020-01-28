@@ -11,6 +11,7 @@ public class Main {
         System.out.println("Введите путь назначения");
         String dest = scanner.nextLine();
         folderCopy(source, dest);
+        System.out.println("Папка полностью скопирована.");
     }
 
     private static void folderCopy(String source, String destination) throws IOException {
