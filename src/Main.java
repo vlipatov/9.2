@@ -24,9 +24,7 @@ public class Main {
         if (listOfFiles != null)
             for (File file : listOfFiles)
                 if (file.isDirectory()) {
-                    System.out.println(file.getAbsolutePath());
-                    System.out.println(destDir+"\\"+file.getName());
-                    folderCopy(file.getAbsolutePath(), destDir+"\\"+file.getName());
+                folderCopy(file.getAbsolutePath(), destDir+"\\"+file.getName());
                 } else Files.copy(file.toPath(), destDir.resolve(file.getName()), StandardCopyOption.REPLACE_EXISTING);
     }
 }
