@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9f311a0d-38d1-4df5-a795-123e358e4d68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CopyFolder/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CopyFolder/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,6 +27,11 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\testuser\Skillbox\9\CopyFolder\data" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -71,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580202119404</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed final&#10;-----------&#10;не копировались внутренности вложенных папок, поправил">
+      <created>1580218219162</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580218219162</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,6 +105,7 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="final commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="final commit" />
+    <MESSAGE value="fixed final&#10;-----------&#10;не копировались внутренности вложенных папок, поправил" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed final&#10;-----------&#10;не копировались внутренности вложенных папок, поправил" />
   </component>
 </project>
